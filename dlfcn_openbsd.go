@@ -7,7 +7,7 @@ package purego
 
 const (
 	intSize      = 32 << (^uint(0) >> 63) // 32 or 64
-	RTLD_DEFAULT = -2
+	RTLD_DEFAULT = 1<<intSize - 2
 	RTLD_LAZY    = 1
 	RTLD_NOW     = 2
 	RTLD_LOCAL   = 0x000
