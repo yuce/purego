@@ -9,7 +9,7 @@ package cgo
 // because Cgo and assembly files can't be in the same package.
 
 /*
-#cgo !netbsd LDFLAGS: -ldl
+#cgo !(openbsd || netbsd) LDFLAGS: -ldl
 
 #include <stdint.h>
 #include <dlfcn.h>

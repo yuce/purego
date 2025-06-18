@@ -25,6 +25,8 @@ func getSystemLibrary() (string, error) {
 		return "libc.so.7", nil
 	case "linux":
 		return "libc.so.6", nil
+	case "openbsd":
+		return "libc.so.100.3", nil
 	case "netbsd":
 		return "libc.so", nil
 	case "windows":
